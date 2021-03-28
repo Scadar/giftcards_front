@@ -1,0 +1,40 @@
+@import "src/scss/style";
+
+.Register {
+  padding: 30px;
+  width: 470px;
+  border: 2px solid #DB4C3F;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.20);
+  border-radius: 16px;
+  margin: 0 auto;
+  & input{
+    width: 100%;
+    border: 1px solid #DB4C3F;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  &__submit{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid $blueColor;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    &:hover{
+      transform: scale(1.1) translate(-50%, 0);
+    }
+  }
+  &__error{
+    color: $redColor;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
